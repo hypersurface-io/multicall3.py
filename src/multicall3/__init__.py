@@ -24,6 +24,12 @@ def get_deployed_block_number(chain_id: int) -> int:
     # arbitrum
     if chain_id == 42161:
         return 7654707
+    # hyper evm
+    if chain_id == 999:
+        return 13051
+    # base
+    if chain_id == 8453:
+        return 5022
     raise Exception("chain_id not supported")
 
 
